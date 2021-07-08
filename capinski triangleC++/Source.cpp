@@ -4,6 +4,7 @@
 #include <stdlib.h>     /* srand, rand */
 
 using namespace std;
+#define PI 3.14
 
 
 struct point {
@@ -13,7 +14,6 @@ struct point {
 int main() {
 
 
-#define PI 3.14
     auto seed = time(NULL);
     while(1)
     {
@@ -39,14 +39,7 @@ int main() {
         int R = rand() % 255 + 1, G = rand() % 255 + 1, B = (int)G * G / R;
         int rgb_init[3] = { R,G,B };
         COLORREF COLOR = RGB(R, G, B);
-
-        //Draw pixels
-        //for (double i = 0; i < 25; i += 0.05)//0<x<50,0<y25
-        //{
-        //    SetPixel(mydc, (int)(50 + 25 * cos(i)), pixel, COLOR);
-        //    pixel += 1;
-        //}
-
+        
 
         //need three random points
         point points[3];
