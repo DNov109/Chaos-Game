@@ -4,8 +4,6 @@
 #include <stdlib.h>     /* srand, rand */
 
 using namespace std;
-#define PI 3.14
-
 
 struct point {
     float x, y;
